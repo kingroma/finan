@@ -1,13 +1,14 @@
-package com.java.parser;
+package com.java.object;
 
-public class ParserVO {
+public class CommonVO {
 	private String date; 
 	private String endPrice; 
 	private String startPrice; 
 	private String upDownPrice; 
 	private String maxPrice; 
 	private String minPrice; 
-	private String transaction; 
+	private String transaction;
+	
 	public String getDate() {
 		return date;
 	}
@@ -23,14 +24,14 @@ public class ParserVO {
 	public String getStartPrice() {
 		return startPrice;
 	}
-	public void setStartPrice(String stratPrice) {
-		this.startPrice = stratPrice;
+	public void setStartPrice(String startPrice) {
+		this.startPrice = startPrice;
 	}
-	public String getUpDownSize() {
+	public String getUpDownPrice() {
 		return upDownPrice;
 	}
-	public void setUpDownSize(String upDownSize) {
-		this.upDownPrice = upDownSize;
+	public void setUpDownPrice(String upDownPrice) {
+		this.upDownPrice = upDownPrice;
 	}
 	public String getMaxPrice() {
 		return maxPrice;
@@ -49,7 +50,9 @@ public class ParserVO {
 	}
 	public void setTransaction(String transaction) {
 		this.transaction = transaction;
-	}
+	} 
+	
+	
 	
 	
 	

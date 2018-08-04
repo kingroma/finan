@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<select id="isEntity">
+	SELECT * FROM TB_DD_NHN WHERE NHN_DATE = #{date}
+</select>

@@ -8,6 +8,7 @@ import java.util.Properties;
 
 public class CntlProperty {
 	private static String msgPath = "src/resource/message.properties";
+	
 	private static Properties p = null;
 	public static String msg(String key) {
 		String value = "";

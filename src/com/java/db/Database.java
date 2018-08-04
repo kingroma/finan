@@ -13,7 +13,8 @@ public class Database {
 	private String db_id;
 	private String db_pw;
 	
-	public Database() {
+	public Database(String point) {
+		System.out.println(" [[ "+point+" ]] ");
 		init();
 	}
 	

@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import com.java.parser.ParserVO;
+import com.java.object.CommonVO;
 
 public class Msg {
 	public static void print(String str){
@@ -16,13 +16,13 @@ public class Msg {
 		}
 	}
 	
-	public static void printParserVO(List<ParserVO> list){
+	public static void printCommonVO(List<CommonVO> list){
 		int index = 1;
-		for(ParserVO vo : list){
+		for(CommonVO vo : list){
 			System.out.println("[[ "+index+" ]]");
 			System.out.println(CntlProperty.msg("NHN.date")+" : "+vo.getDate());
 			System.out.println(CntlProperty.msg("NHN.endPrice")+" : "+vo.getEndPrice());
-			System.out.println(CntlProperty.msg("NHN.upDownSize")+" : "+vo.getUpDownSize());
+			System.out.println(CntlProperty.msg("NHN.upDownSize")+" : "+vo.getUpDownPrice());
 			System.out.println(CntlProperty.msg("NHN.startPrice")+" : "+vo.getStartPrice());
 			System.out.println(CntlProperty.msg("NHN.maxPrice")+" : "+vo.getMaxPrice());
 			System.out.println(CntlProperty.msg("NHN.minPrice")+" : "+vo.getMinPrice());
