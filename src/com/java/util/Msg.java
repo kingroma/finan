@@ -16,18 +16,17 @@ public class Msg {
 		}
 	}
 	
-	//날짜	종가	전일비	시가	고가	저가	거래량
 	public static void printParserVO(List<ParserVO> list){
 		int index = 1;
 		for(ParserVO vo : list){
 			System.out.println("[[ "+index+" ]]");
-			System.out.println("날짜 : "+vo.getDate());
-			System.out.println("종가 : "+vo.getEndPrice());
-			System.out.println("전일비 : "+vo.getUpDownSize());
-			System.out.println("시가 : "+vo.getStartPrice());
-			System.out.println("고가 : "+vo.getMaxPrice());
-			System.out.println("저가 : "+vo.getMinPrice());
-			System.out.println("거래량 : "+vo.getTansaction());
+			System.out.println(CntlProperty.msg("NHN.date")+" : "+vo.getDate());
+			System.out.println(CntlProperty.msg("NHN.endPrice")+" : "+vo.getEndPrice());
+			System.out.println(CntlProperty.msg("NHN.upDownSize")+" : "+vo.getUpDownSize());
+			System.out.println(CntlProperty.msg("NHN.startPrice")+" : "+vo.getStartPrice());
+			System.out.println(CntlProperty.msg("NHN.maxPrice")+" : "+vo.getMaxPrice());
+			System.out.println(CntlProperty.msg("NHN.minPrice")+" : "+vo.getMinPrice());
+			System.out.println(CntlProperty.msg("NHN.transaction")+" : "+vo.getTransaction());
 			index++;
 		}
 	}
